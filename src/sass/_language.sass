@@ -1,0 +1,90 @@
+//.language
+//  position: relative
+//  width: 60px
+//  height: 35px
+//  line-height: 35px
+//  border: 1px solid #fff
+//  color: #fff
+//  display: flex
+//  justify-content: center
+//  cursor: pointer
+//
+//  &__el,
+//  &__link
+//    &:visited,
+//    &:focus,
+//    &:active
+//      color: #fff
+//
+//  &.is-active
+//    .language__list
+//      display: flex
+//      flex-direction: column
+//      align-items: center
+//
+//  &__list
+//    position: absolute
+//    width: 60px
+//    top: 35px
+//    left: 0
+//    display: none
+//    background-color: $bgBlue
+//    z-index: 10
+
+// second version
+
+.language-wrap
+  margin-left: 14px
+  position: relative
+  width: 60px
+  height: 36px
+  cursor: pointer
+
+.language
+  position: absolute
+  top: 0
+  right: 0
+  display: inline-flex
+  flex-direction: column
+  width: 60px
+  height: 35px
+  line-height: 35px
+  border: 1px solid #fff
+  overflow: hidden
+  z-index: 10
+
+  &.is-open
+    height: auto
+
+    .language
+
+      &__el
+        border-bottom: 1px solid white
+
+        &:last-child
+          border-bottom: none
+
+  &__el
+    padding-left: 10px
+    display: flex
+    flex: 1
+    order: 2
+    min-height: 35px
+    text-transform: uppercase
+    background-color: $bgBlue
+
+    &.is-active
+      order: 1
+
+  &__link
+    &:visited,
+    &:active,
+    &:focus
+      color: #fff
+
+  &__ico
+    position: absolute
+    top: 16px
+    right: 9px
+    z-index: 11
+

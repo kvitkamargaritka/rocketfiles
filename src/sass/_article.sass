@@ -1,0 +1,28 @@
+.article
+  padding: 11px 0
+  display: flex
+  border-bottom: 1px solid #eaeaea
+  cursor: pointer
+  transition: all .3s ease
+
+  &:hover
+    background-color: #f8f8f8
+    .article__title
+      color: $textBlue
+
+  &__left
+    margin-right: 15px
+
+  &__title
+    color: $textGreyDark
+    font-size: 16px
+    +h700
+
+  &__descr
+    font-size: 13px
+    color: $textGreyDark
+    +h300
+
+  &__more
+    margin-top: 11px
+    text-align: center

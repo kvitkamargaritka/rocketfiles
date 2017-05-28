@@ -1,0 +1,37 @@
+.drop-down
+  display: none
+  position: absolute
+  top: 60px
+  left: 0
+  width: 100%
+  justify-content: space-between
+  padding: 15px
+  background-color: $bgBlueMenu
+  z-index: 10
+
+  &__list
+    width: 100%
+
+  &__el
+    padding: 10px
+    font-size: 14px
+    color: #fff
+    text-transform: uppercase
+    cursor: pointer
+    +h700
+
+    &.is-active
+      color: $textGreyDark
+      background-color: #fff
+
+      .drop-down-inner
+        display: block
+        position: absolute
+        top: 0
+        right: 15px
+
+.drop-down-inner
+  display: none
+
+  &.is-visible
+    display: block

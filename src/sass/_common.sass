@@ -1,0 +1,115 @@
+//variables
+$bgBlue: #008ad1
+$bgGreenLight: #48b950
+$bgGreenDark: #42ad49
+$textBlue: #0091de
+$bgBlueMenu: #0aa5f5
+$textGreyDark: #434a4c
+$textGreyLight: #68767d
+
++font("roboto-light", roboto-light)
++font("roboto-regular", roboto-regular)
++font("roboto-bold", roboto-bold)
++font("raleway-light", raleway-light)
++font("raleway-semibold", raleway-semibold)
+
+=h200
+	font-family: "raleway-light", Helvetica, Arial, sans-serif
+
+=h600
+	font-family: "raleway-semibold", Helvetica, Arial, sans-serif
+
+=h300
+	font-family: "roboto-light", Helvetica, Arial, sans-serif
+
+=h400
+	font-family: "roboto-regular", Helvetica, Arial, sans-serif
+
+=h700
+	font-family: "roboto-bold", Helvetica, Arial, sans-serif
+
+h1
+	font-size: 28px
+	color: $textGreyDark
+	+h700
+
+	span
+		padding-left: 7px
+		font-size: 16px
+		color: $textGreyLight
+		+h300
+
+h2
+	font-size: 22px
+	color: $textGreyDark
+	+h300
+
+h3
+	font-size: 18px
+	color: $textGreyDark
+	+h700
+
+body
+	min-width: 1060px
+	font-size: 12px
+	line-height: 1.4
+	color: $textGreyDark
+	+h400
+
+a,
+a:active,
+a:focus,
+a:visited
+	display: inline-flex
+	color: $textBlue
+	text-decoration: none
+	cursor: pointer
+	transition: all .3s ease-in-out
+	
+// common blocks
+
+.i-bold
+	+h700
+
+.i-upper
+	text-transform: uppercase
+
+.atoms
+	width: 1100px
+	margin: 10px auto
+
+.atom
+	margin: 10px 0
+	padding: 10px
+	border: 1px solid #2c2c2c
+
+.copyright
+
+	&__descr
+		font-size: 14px
+		color: #fff
+		+h300
+
+.banner
+
+	&__name
+		display: flex
+		margin-bottom: 6px
+		font-size: 11px
+		color: $textGreyLight
+		+h300
+
+.row
+
+	&__wrap
+		padding-bottom: 27px
+		margin-top: 29px
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid #eaeaea
+
+.social-likes__widget_facebook
+
+	.social-likes__counter_facebook
+		&:last-child
+			display: none

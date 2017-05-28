@@ -1,0 +1,29 @@
+.slider
+  width: 700px
+
+.slick-slide
+  padding: 0 5px
+
+.slick-prev
+  transform: rotate(-90deg)
+
+.slick-next
+  transform: rotate(90deg)
+
+.slick-arrow
+
+  &:before,
+  &:after
+    content: ''
+    position: absolute
+    width: 8px
+    height: 1px
+    background-color: $textGreyDark
+
+  &:before
+    left: 0
+    transform: rotate(-45deg)
+
+  &:after
+    left: 5px
+    transform: rotate(45deg)
