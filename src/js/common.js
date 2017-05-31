@@ -1,26 +1,38 @@
 $(document).ready(function() {
 
-  //$fancyBox.fancybox({
-  //  padding : 0,
-  //  titleShow : true,
-  //  transitionIn : 'fade',
-  //
-  //  helpers: {
-  //    overlay: {
-  //      locked: false
-  //    }
-  //  }
-  //});
+  var $slick = $('.slider'),
+      $fancyBox = $('.img-gallery'),
+      $socialLikes = $('.social-likes'),
+      $languageEl = $('.language__el'),
+      $language = $('.language'),
+      $btnScroll = $('.btn-scroll');
 
-  $('.slider').slick({
+  $slick.slick({
     infinity: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
+    prevArrow: '<span class="btn-prev"></span>',
+    nextArrow: '<span class="btn-next"></span>'
   });
 
-  $('.social-likes').socialLikes({
+  $fancyBox.fancybox({
+    padding : 0,
+    titleShow : true,
+    transitionIn : 'fade',
+    showCloseButton: true,
+    overlayColor: '#000',
+    overlayOpacity: 0.4,
+
+      helpers: {
+      overlay: {
+        locked: false
+      }
+    }
+  });
+
+  $socialLikes.socialLikes({
     url: 'https://github.com/sapegin/social-likes/',
     title: 'social likes',
     counters: true,
@@ -66,12 +78,12 @@ $(document).ready(function() {
   };
 
   //Language
-  $('.language').hover(function(){
+  $language.hover(function(){
     $(this).toggleClass('is-open');
   });
 
-  $('.language__el').click(function(){
-    $('.language__el').removeClass('is-active');
+  $languageEl.click(function(){
+    $languageEl.removeClass('is-active');
     $(this).toggleClass('is-active');
   });
 
@@ -93,8 +105,8 @@ $(document).ready(function() {
   hoverSwitcher(innerMenu, innerDropDown);
 
   // Scroll to discussion
-  $('.btn-scroll').on('click',function() {
-    var margin = 25;
+  $btnScroll.on('click',function() {
+    var margin = 10;
     $('body,html').animate({
       scrollTop: $('.discussion').offset().top - margin
     }, 1000);

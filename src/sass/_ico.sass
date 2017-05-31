@@ -1,21 +1,31 @@
 .ico
   display: inline-block
   vertical-align: middle
+  position: relative
 
   &.is-search
-    background: url("../img/ico_search.png")
-    width: 16px
-    height: 16px
+    margin: 0 3px 3px 0
+    width: 14px
+    height: 14px
+    border: 2px solid #0091db
+    border-radius: 50%
+    transition: all .3s ease-in-out
+
+    &::after
+      position: absolute
+      content: ''
+      right: -5px
+      bottom: -2px
+      width: 7px
+      height: 2px
+      background-color: #0091db
+      transform: rotate(45deg)
+      transition: all .3s ease-in-out
 
   &.is-arrow-down
     background: url("../img/ico-arrow-down.png")
     width: 28px
     height: 31px
-
-  &.is-ccleaner
-    background: url("../img/ico-ccleaner.png")
-    width: 80px
-    height: 74px
 
   &.is-stars
     background: url("../img/ico-stars.png")
@@ -77,7 +87,6 @@
     width: 17px
     height: 16px
 
-
   &.is-download
     background: url("../img/ico-download.png")
     width: 16px
@@ -97,4 +106,32 @@
     background: url("../img/ico-folder.png")
     width: 16px
     height: 13px
+
+  &.is-fb,
+  &.is-tw,
+  &.is-gp
+    width: 30px
+    height: 30px
+
+  &.is-fb
+    background: url("../img/Facebook.png")
+    background-color: #3a73b7
+
+    &:hover
+      background-color: #3a7fd3
+
+  &.is-tw
+    background: url("../img/Twitter.png")
+    background-color: #56b6ff
+
+    &:hover
+      background-color: #68c1ff
+
+  &.is-gp
+    background: url("../img/G+.png")
+    background-color: #ff5e3c
+
+    &:hover
+      background-color: #ff7353
+
 

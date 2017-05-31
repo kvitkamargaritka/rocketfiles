@@ -10,6 +10,7 @@
     position: relative
     display: flex
     flex-direction: row
+    justify-content: space-between
     align-items: center
 
   &__right
@@ -17,17 +18,23 @@
     align-items: center
 
 .content
-  padding: 11px 0
+  padding: 10px 0
 
   &__wrap
     display: flex
     justify-content: space-between
 
+  &__left
+    width: 69%
+
+  &__right
+    width: 31%
+
 .footer
   background-color: $bgBlue
 
   &__wrap
-    padding: 10px 0
+    padding: 15px 0
     display: flex
     justify-content: space-between
     align-items: center

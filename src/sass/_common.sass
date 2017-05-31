@@ -13,12 +13,6 @@ $textGreyLight: #68767d
 +font("raleway-light", raleway-light)
 +font("raleway-semibold", raleway-semibold)
 
-=h200
-	font-family: "raleway-light", Helvetica, Arial, sans-serif
-
-=h600
-	font-family: "raleway-semibold", Helvetica, Arial, sans-serif
-
 =h300
 	font-family: "roboto-light", Helvetica, Arial, sans-serif
 
@@ -51,20 +45,19 @@ h3
 
 body
 	min-width: 1060px
-	font-size: 12px
+	font-size: 13px
 	line-height: 1.4
 	color: $textGreyDark
 	+h400
 
-a,
-a:active,
-a:focus,
-a:visited
-	display: inline-flex
-	color: $textBlue
+a
+	display: inline-block
 	text-decoration: none
 	cursor: pointer
 	transition: all .3s ease-in-out
+
+img
+	display: inline-block
 	
 // common blocks
 
@@ -99,11 +92,21 @@ a:visited
 		color: $textGreyLight
 		+h300
 
+.discussion
+	margin-top: 22px
+	margin-bottom: 60px
+
+	.section-title
+		margin-bottom: 5px
+
+.section-title
+	margin-bottom: 10px
+
 .row
 
 	&__wrap
-		padding-bottom: 27px
-		margin-top: 29px
+		padding-bottom: 24px
+		padding-top: 29px
 		display: flex
 		justify-content: space-between
 		border-bottom: 1px solid #eaeaea
