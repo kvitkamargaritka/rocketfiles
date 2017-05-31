@@ -391,9 +391,9 @@ img { display: inline-block; }
 .ico.is-settings { background: url("../img/ico-settings.png"); width: 16px; height: 16px; }
 .ico.is-folder { background: url("../img/ico-folder.png"); width: 16px; height: 13px; }
 .ico.is-fb, .ico.is-tw, .ico.is-gp { width: 30px; height: 30px; }
-.ico.is-fb { background: url("../img/Facebook.png"); background-color: #3a73b7; }
+.ico.is-fb { background: url("../img/fb.png"); background-color: #3a73b7; }
 .ico.is-fb:hover { background-color: #3a7fd3; }
-.ico.is-tw { background: url("../img/Twitter.png"); background-color: #56b6ff; }
+.ico.is-tw { background: url("../img/tw.png"); background-color: #56b6ff; }
 .ico.is-tw:hover { background-color: #68c1ff; }
 .ico.is-gp { background: url("../img/G+.png"); background-color: #ff5e3c; }
 .ico.is-gp:hover { background-color: #ff7353; }
